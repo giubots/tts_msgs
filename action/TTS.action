@@ -15,8 +15,12 @@ string locale
 # If not provided, the system should use the default voice for the selected locale.
 string voice
 ---
-# If not succeded, `error_msg` should contain an error message
+# If not succeeded, `error_msg` should contain an error message
 string error_msg
+
+# (Optional) The text actually uttered.
+# If not provided, and `error_msg` is empty, all the text in `input` was uttered.
+string text
 ---
 # The current word being uttered.
 string word
